@@ -1,0 +1,229 @@
+.main {
+  justify-content: space-around;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+
+  background: url(../img/first__back.jpg);
+  background-repeat: no-repeat;
+
+  @include onMobile {
+    background: url(../img/second__back.jpg);
+  }
+
+  &__container {
+    position: relative;
+    margin-left: 18.75vw;
+    margin-top: 5vw;
+
+    @include onMobile {
+      margin: 0;
+      margin-left: 16px;
+    }
+  }
+
+  &__container2 {
+    display: flex;
+  }
+
+  &__course {
+    position: absolute;
+    margin-top: 5.65vw;
+    margin-left: 18.5vw;
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: calc(75px + 55 * (100vw / 1920));
+    line-height: 140%;
+    letter-spacing: 0.15em;
+    color: #3E3E3C;
+
+    @include onMobile {
+      margin-left: -10px;
+      margin-top: 180px;
+      font-size: 130px;
+    }
+  }
+
+  &__online {
+    margin-bottom: 3.25vw;
+    margin-right: 0.75vw;
+    transition-duration: 1s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    @include onMobile {
+      margin-top: 170px;
+    }
+  }
+
+  &__top {  
+    margin-bottom: 3.25vw;
+    transition-duration: 1s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__title {
+    margin-bottom: 1.5vw;
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: calc(28px + 22 * (100vw / 1920));
+    line-height: 120%;
+    color: #ffffff;
+
+    @include onMobile {
+      margin-top: 85px;
+      font-size: 36px;
+    }
+  }
+
+  &__plus {
+    margin-left: -2vw;
+    margin-bottom: 3vw;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    list-style: none;
+    color: #ffffff;
+
+    @include onMobile {
+      margin-left: -25px;
+      word-wrap: break-word;
+      font-size: 18px;
+    }
+
+    &-li {
+      margin-left: -15px;
+      margin-top: 0.75vw;
+    }
+  }
+
+  &__price {
+    margin-left: 6.75vw;
+    display: inline-block;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 150%;
+    text-decoration: line-through;
+    color: #B7B7B7;
+
+    @include onMobile {
+      margin-left: 130px;
+    }
+
+    &-sale1 {
+      display: inline-block;
+      font-family: 'Roboto';
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 150%;
+      color: #ffffff;
+    }
+
+    &-sale2 {
+      margin-bottom: 1.5vw;
+      display: inline-block;
+      font-family: 'Roboto';
+      font-weight: 900;
+      font-size: 50px;
+      line-height: 120%;
+      color: #ffffff;
+    }
+  }
+
+  &__follow {
+    left: 0;
+  }
+
+  &__button {
+    display: block;
+    width: 275px;
+    height: 65px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $mainColor;
+    background-color: #E0FF00;
+    text-decoration: none;
+    text-align: center;
+    line-height: 65px;
+    border-radius: 15px;
+    transition-duration: 1s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    @include onMobile {
+      width: 345px;
+    }
+  }
+
+  &__term {
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin-bottom: 90px;
+  }
+
+  &__info {
+    margin-left: 2.15vw;
+    margin-top: 0.5vw;
+    
+    @include onMobile {
+      display: none;
+    }
+
+    &-onMobile {
+      margin-top: 50px;
+      margin-bottom: 37px;
+    }
+
+    &_items {
+      display: inline-block;
+      margin-right: 49px;
+      border-left: 1px solid #E0FF00;
+
+      @include onMobile {
+        margin-bottom: 13px;
+        margin-right: 45px;
+      }
+    }
+
+    &_name {
+      margin-left: 15px;
+      font-family: 'Roboto';
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 150%;
+      color: #FFFFFF;
+    }
+
+    &_value {
+      margin-left: 15px;
+      font-family: 'Roboto';
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 150%;
+      color: #FFFFFF;
+    }
+  }
+}
+
+.price {
+  left: 400px;
+
+  &__grn {
+    font-size: 18px;
+    color: #ffffff;
+  }
+}

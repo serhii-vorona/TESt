@@ -1,0 +1,124 @@
+.header{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+
+  height: 4.75vw;
+
+  
+  @include onMobile {
+    height: 61px;
+  }
+
+  &__nav1 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &__logo {
+    width: 135px;
+    height: 65px;
+    margin-right: 11vw;
+    background-image: url(../img/logo-name.png);
+    background-repeat: no-repeat;
+
+    
+    @include onMobile {
+      width: 60px;
+      height: 35px;
+      background-image: url(../img/image\ 38.png);
+    }
+  }
+  
+  &__nav {
+    display: flex;
+    align-items: center;
+
+    @include onMobile {
+      display: none;
+    }
+  }
+  
+  &__a {
+    text-decoration: none;
+    line-height: 50px;
+    margin-right: 60px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    color: $mainColor;
+    transition-duration: 1s;
+    /* white-space: nowrap; */
+
+    &:last-child {
+      margin-right: 0px;
+    }
+
+    &:hover {
+      text-shadow: 7px 1px 5px rgba(0,0,0,0.6);
+
+    }
+  }
+  
+  &__telephon {
+    
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: $mainColor;
+    text-decoration: none;
+
+    @include onMobile {
+      display: none;
+    }
+  }
+  
+  &__reg {
+    width: 210px;
+    height: 55px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    background-color: $mainColor;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    line-height: 50px;
+    transition-duration: 1s;
+
+    
+    @include onMobile {
+      font-family: 'Roboto';
+      font-size: 14px;
+      background-color: #fff;
+      color: #000000
+    }
+
+    &:hover {
+      color: #E0FF00;
+    }
+  }
+
+  &__burger {
+    display: none;
+
+    @include onMobile {
+      display: block;
+      margin-right: 16px;
+    }
+  }
+}
+
+.menu-btn {
+	width: 30px;
+	height: 30px;
+	position: relative;
+	z-index:2;
+	overflow: hidden;
+  color: #000000;
+}
+
